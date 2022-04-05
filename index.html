@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lauren Duker Design & Development Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- bootstrap stylesheet -->
+    <link href="vendor/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="vendor/bootstrap-icons.css" />
+
+    <!-- My stylesheet !-->
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+
+  <body>
+    <!-- container-fliud bootstrap class enables containter to fill the entire page-->
+    <div class="container-fluid">
+      <!-- bootstrap nav bar classes, fixed to top of screen-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand active" aria-current="page" href="index.html"
+            >Lauren Lalita Designs</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <!-- nav will toggle to hamburger menu on mobile-->
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="portfolio.html"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Projects
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="walter.html"
+                      >Musician Brand & Website</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="travel.html"
+                      >Travel Company Website</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="skincare.html"
+                      >Skincare Brand & Website</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="yoga.html"
+                      >Yoga Teacher Website</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section snake-parallax="hero">
+        <div class="row justify-content-center text-center align-items-center">
+          <div class="col-sm-5 col-lg-4 order-sm-2 first">
+            <h1>Creative Web Design & Development</h1>
+          </div>
+          <!-- column widths will adapt to screen size-->
+          <div class="col-sm-7 col-lg-4 order-sm-1 second">
+            <figure>
+              <img
+                src="assets/logo.png"
+                class="img-fliud"
+                alt="Vintage floral pattern in a diamond shape, with LL logo"
+                width="450"
+              />
+
+              <figcaption>
+                Photo in logo via
+                <a
+                  href="https://www.canva.com/policies/onedesign/"
+                  target="_blank"
+                  >Canva Pro License</a
+                >.
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="col-sm-7 col-lg-4 order-last">
+            <br />
+            <br />
+            <a
+              class="btn btn-primary btn-lg"
+              href="about.html#contact"
+              data-bs-toggle="tooltip"
+              role="button"
+              >CONTACT LAUREN</a
+            >
+            <br />
+            <br />
+          </div>
+        </div>
+      </section>
+      <!-- responseive bootstrap grid styling-->
+      <div class="row justify-content-center align-items-center">
+        <div class="col-sm-8 col-lg-6">
+          <br />
+          <br />
+          <p>
+            We are a boutique website design studio based in the North Bay. We
+            specialize in inspired web design and creative brand identities for
+            small businesses. We are a one-stop shop for both design and
+            development. Gone are the miscommunications between you, the
+            designer, and the developer. With the eye of a designer and the
+            ability of a developer, your vision will come to life!
+          </p>
+          <br />
+          <br />
+        </div>
+      </div>
+
+      <footer class="row justify-content-center align-items-center">
+        <div class="col-sm-6 col-md-4">
+          <br />
+          <br />
+          <p>Lauren Lalita Designs, 2021</p>
+          <br />
+          <br />
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <a
+            href="about.html"
+            title="See what Lauren Lalita Designs is all about."
+            >ABOUT & CONTACT</a
+          >
+          <br />
+          <a
+            href="portfolio.html"
+            title="See past designs in Lauren's portfolio."
+            >PORTFOLIO</a
+          >
+          <br />
+          <a href="index.html" title="Contact us to design your website!"
+            >HOME</a
+          >
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <br />
+          <figure>
+            <img
+              src="assets/logo.png"
+              alt="Vintage floral pattern in a diamond shape, with LL logo"
+              width="150"
+            />
+
+            <figcaption>
+              Photo in logo via
+              <a
+                href="https://www.canva.com/policies/onedesign/"
+                target="_blank"
+                >Canva Pro License</a
+              >.
+            </figcaption>
+          </figure>
+        </div>
+      </footer>
+    </div>
+
+    <script src="vendor/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery.min.js"></script>
+    <script src="vendor/Snake.Parallax.js"></script>
+
+    <script>
+      $(document, window).SnakeParallax({
+        backgroundPosition: "center top",
+        backgroundImage: "url('assets/shadow-figure.jpg')",
+      });
+    </script>
+  </body>
+</html>
